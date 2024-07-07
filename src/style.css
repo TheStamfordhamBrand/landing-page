@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+  padding: 0;
+}
+
+.transitionItem {
+  transition: all 0.3s linear;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+@font-face {
+  font-family:'nauticaBold';
+  src: url('./assets/fonts/nauticaBold.otf') format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family:'nauticaMedium';
+  src: url('./assets/fonts/nauticaMedium.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family:'nauticaRegular';
+  src: url('./assets/fonts/nauticaRegular.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family:'nauticaKnots';
+  src: url('./assets/fonts/nauticaKnots.otf') format('opentype');
+  font-weight: 300 900;
+}
+
+@font-face {
+  font-family:'helveticaBlack';
+  src: url('./assets/fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+}
+
+@layer components {
+ .Monte400 {
+  @apply font-monte, font-[400]
+ }
+ .btn {
+  @apply bg-primary font-monte font-[400] text-[1rem] text-textCol px-[1.5rem] py-[0.75rem] rounded-[6rem] shadow-innerShadow drop-shadow-btnDrop cursor-pointer
+ }
+
+ .about_founder p {
+  @apply font-monte font-[400] leading-[1.5rem] text-[1rem] text-[#000000] tab:text-justify
+ }
+
+ .track span {
+  @apply tab2:w-[0.8rem] tab2:h-[0.8rem]
+ }
+
+ /* .logoSlider img {
+  @apply h-full object-contain block
+ } */
+
+ .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+  }
+}
+
+@media (max-width: 1280px){
+  html {
+      font-size: 14.222px !important;
+  }
+}
+
+nav {
+  background: linear-gradient(92.43deg, rgba(17, 18, 20, 0.75) 11.06%, rgba(12, 13, 15, 0.9) 95.77%);
+}
+
+/* @media (max-width: 1024px){
+  html {
+    font-size: 16px !important;
+  }
+}  */
