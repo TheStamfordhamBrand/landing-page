@@ -2,9 +2,10 @@
     <section class="w-full bg-[#000000] py-[5rem]">
         <div>
             <h3 class="font-helveticaBlack font-[400] text-[#ffffff] text-[3.06rem] leading-[3.68rem] mob:text-[2.44rem] mob:leading-[2.39rem] mb-5 text-center">FAQ</h3>
-            <div class="w-[56.11rem] tab:w-[90%] mx-auto flex flex-col gap-4">
+            <div class="w-[56.11rem] tab:w-[90%] mx-auto flex flex-col gap-4">    
+                     
                 <article 
-                class="w-full bg-[#333333] rounded-[1.25rem] px-[1.75rem] py-[1.5rem] transitionItem"
+                class="w-full bg-[#333333] rounded-[1.25rem] px-[1.75rem] py-[1.5rem] transitionItem cursor-pointer"
                 v-for="(question, index) in questions"
                 :key="index"
                 @click="toggleModal(index)"
