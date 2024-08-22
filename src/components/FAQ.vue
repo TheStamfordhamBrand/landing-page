@@ -69,7 +69,7 @@ const questions = ref([
     },
     {
         id: 4,
-        quest: `DDOES CONTENT CREATION COME WITH YOUR SOCIAL MEDIA MANAGEMENT SERVICE?`,
+        quest: `DOES CONTENT CREATION COME WITH YOUR SOCIAL MEDIA MANAGEMENT SERVICE?`,
         answer: `We have 3 packages catered to various social media management needs. Two of these packages contain content creation so you do not have to worry about content, we have got that covered!`
     },
     {
