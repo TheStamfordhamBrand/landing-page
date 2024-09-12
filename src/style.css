@@ -70,6 +70,14 @@ a {
   @apply tab2:w-[0.8rem] tab2:h-[0.8rem]
  }
 
+ .trainingNav li {
+  @apply font-monte text-[1rem] leading-[1.5rem] font-[400]
+ }
+
+ .sectionOne .intro p {
+  @apply font-monte font-[400] text-[1.25rem] leading-[1.88rem]
+ }
+
  /* .logoSlider img {
   @apply h-full object-contain block
  } */
@@ -93,6 +101,8 @@ a {
 nav {
   background: linear-gradient(92.43deg, rgba(17, 18, 20, 0.75) 11.06%, rgba(12, 13, 15, 0.9) 95.77%);
 }
+
+
 
 /* @media (max-width: 1024px){
   html {
