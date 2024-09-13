@@ -13,4 +13,4 @@ AOS.init();
 
 app.use(router)
 app.mount('#app')
-document.title = 'Sports Continent'
+document.title = 'The Stamfordham Brand'
